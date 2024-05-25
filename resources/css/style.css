@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #013334;
 }
 
 header {
@@ -27,6 +27,77 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.cust-navbar {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item a {
+    color: #013334 !important;
+}
+
+.nav-item a:hover {
+    color: #12C66F !important;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.header-content h1 {
+    font-size: 2.2em;
+    color: #012222;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.image-section-1 {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.image-section-2 {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    width: 400px;
+}
+
+.header-content .header-cta {
+    margin-bottom: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-container-1 {
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -36,3 +107,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+
+
