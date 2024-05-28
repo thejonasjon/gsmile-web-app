@@ -98,6 +98,50 @@ main {
     padding-left: 100px;
 }
 
+/* ! on 1 Mentorship */
+.mentorship-container {
+    text-align: center;
+}
+
+/* Account Management */
+.account-container {
+    text-align: center;
+}
+
+.account-card-container {
+    display: inline-flex;
+}
+
+.account-management-card {
+    width: 300px;
+    background-color: #f8f8f8;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 22px 22px 28px -19px rgba(158,158,158,0.2);
+    -webkit-box-shadow: 22px 22px 28px -19px rgba(158,158,158,0.2);
+    -moz-box-shadow: 22px 22px 28px -19px rgba(158,158,158,0.2);
+    position: relative;
+    padding: 40px;
+}
+
+.container-icon img{
+    background-color: #e5e5e5;
+    padding: 10px;
+
+}
+
+.account-management-card h4{
+    padding-bottom: 20px;
+}
+
+.container-icon {
+    position: absolute;
+    top: -18px;
+    left: 0px;
+
+}
+
+
 /* Footer  */
 .footer-top {
     background-color: #f1f5fb;
@@ -138,7 +182,10 @@ main {
 }
 
 .footer-social img {
-    background-color: #c8c8c8;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    padding: 3px;
+    margin-right: 5px;
 }
 
 .footer-down ul{
