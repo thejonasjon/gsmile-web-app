@@ -3,6 +3,8 @@ body,
 html,
 h1,
 p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -42,6 +44,7 @@ header::before {
     position: relative;
     padding: 20px;
     z-index: 1;
+    height: 100%;
 }
 
 main {
@@ -77,6 +80,7 @@ main {
 }
 
 .header-content h1 {
+    margin: 0;
     font-size: 2.5em;
     color: #fff;
     margin-bottom: 10px;
@@ -138,48 +142,96 @@ main {
 .custom-container-1 {
     padding-top: 250px;
     padding-left: 100px;
-    margin-bottom: 100px;
 }
 
 /* 1 on 1 Mentorship */
+#mentorship {
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    background-attachment: fixed;
+}
+
+.mentorship-content {
+    position: relative;
+    height: 650px;
+}
+
+.mentorship-left {
+    width: 460px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.mentorship-right {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.mentorship-right-02 {
+    width: 460px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.mentorship-left-02 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.mentorship-image img {
+    border-radius: 20px;
+}
+
+.mentorship-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.mentorship-text p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 26px;
+    color: #000;
+}
+
+.mentorship-text ul {
+    margin-top: 15px;
+    list-style-type: disc;
+}
+
+.mentorship-text ul li {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 26px;
+    color: #3a3a3a;
+}
+
 .mentorship-container {
     display: flex;
     text-align: center;
     margin: auto;
 }
 
-.mentorship-card {
-    width: 350px;
+.mentorship-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
 }
 
-.mentorship-container-inner {
-    display: flex;
-    padding-right: 10px;
-}
-
-.outline-link{
-    /* display: flex; */
-    /* justify-content: center; */
-    margin-left: 2rem;
-    color:#12C66F
-}
-
-.outline-link:active{
-    color:hsl(0, 100%, 50%)
-}
-
-.outline-link:visited{
-    color:hwb(271 0% 0%)
-}
-
-.outline-link:hover{
-    border: 1px solid black;
-    border-radius: 2rem;
-    text-decoration: none;
-    padding: 0.5rem 2rem;
+.mentorship-heading p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #1d1c1c;
 }
 
 /* Account Management */
+#account-managements {
+    /* background-color: #000; */
+}
+
 .account-container {
     text-align: center;
 }
@@ -188,46 +240,121 @@ main {
     display: inline-flex;
 }
 
+.management-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.management-text p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 26px;
+    color: #000;
+}
+
 .account-management-card {
-    width: 300px;
-    height: 420px;
+    width: 570px;
+    height: 350px;
     background-color: #f8f8f8;
     text-align: left;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 22px 22px 28px -19px rgba(158, 158, 158, 0.2);
     -webkit-box-shadow: 22px 22px 28px -19px rgba(158, 158, 158, 0.2);
     -moz-box-shadow: 22px 22px 28px -19px rgba(158, 158, 158, 0.2);
     position: relative;
-    padding: 40px;
+    padding: 60px 40px;
 }
 
-.container-icon img {
-    background-color: #e5e5e5;
-    padding: 10px;
+.account-management-card-text h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+}
+
+.account-management-card-text p {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+    color: #000;
+}
+
+.first-card-m {
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.second-card-m {
+    background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.third-card-m {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.fourth-card-m {
+    background-image: linear-gradient(-60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.account-management-card-text ul li {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 26px;
+    color: #3a3a3a;
+}
+
+.management-content {
+    position: relative;
+    height: 400px;
+}
+
+.account-management-card-left {
+    position: absolute;
+    left: 100px;
 
 }
 
-.account-management-card h4 {
-    padding-bottom: 20px;
+.account-management-card-right {
+    position: absolute;
+    right: 100px;
+}
+
+.account-management-card-c {
+    position: relative;
 }
 
 .container-icon {
     position: absolute;
-    top: -18px;
+    top: -35px;
     left: 0px;
-
 }
 
 /* Traning */
+#training {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    padding: 0 0 20px 0;
+    height: 900px;
+
+}
+
 .training-container {
     display: flex;
-    padding-right: 10px;
-    margin: auto;
-    margin-bottom: 150px;
+}
+
+.training-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.training-heading p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #1d1c1c;
 }
 
 .training-image img {
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid #fff;
 }
 
 .training-image {
@@ -236,6 +363,7 @@ main {
 
 .training-card {
     width: 350px;
+    /* height: 400px; */
     background-color: #f8f8f8;
     text-align: left;
     border-radius: 5px;
@@ -248,21 +376,55 @@ main {
     padding: 40px;
 }
 
+.training-card h5 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #373636;
+}
+
+.training-card ul {
+    list-style-type: circle;
+}
+
+.training-card ul li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #474747;
+}
+
 .training-card p {
     font-size: 14px;
 }
 
-.training-learn-more {
-    margin-top: 15px;
+.training-card .learn-more {
+    background-color: #F8F8F8;
+    text-decoration: none;
+    font-size: 13px;
+    color: #045f33;
+    border: 1px solid #F0D9E3;
+    border-radius: 5px;
+    padding: 10px 20px;
+
 }
 
-.training-learn-more a {
-    font-size: 16px;
-    text-decoration: none;
+.training-card .learn-more:hover {
+    background-color: #F0D9E3;
+    border: 1px solid #F0D9E3;
+    transition: linear 0.3s;
+}
+
+.offcanvas {
+    width: 600px !important;
+    background-image: linear-gradient(to top, #F8F8F8 0%, #F8F8F8 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    padding-left: 20px;
+}
+
+.offcanvas-title {
+    font-size: 24px !important;
+    font-weight: 500 !important;
 }
 
 /* Testimonies */
-
 .next-previous a {
     text-decoration: none;
     display: inline-block;
@@ -270,24 +432,167 @@ main {
     margin-right: 20px;
 }
 
+.testimony-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.testimony-text p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #1d1c1c;
+}
+
+.testimonies-card-c {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.card-ml {
+    margin-left: 25px;
+}
+
+.testimonies-card {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    box-shadow: 15px 0px 21px -12px rgba(171, 167, 167, 0.63);
+    -webkit-box-shadow: 15px 0px 21px -12px rgba(171, 167, 167, 0.63);
+    -moz-box-shadow: 15px 0px 21px -12px rgba(171, 167, 167, 0.63);
+}
+
+.testimonies-card:hover {
+    transform: rotate(2deg) scale(1) translateX(-15px);
+    transition: .5s all ease;
+}
+
+.testimonies-card p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #000;
+}
+
+.testimonies-card .profile {
+    margin-top: 10px;
+}
+
+.testimonies-card .profile span img {
+    border-radius: 50%;
+    border: 5px solid #f7f0f0;
+    margin-right: 15px;
+}
+
+.testimonies-card .profile span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #1a1919;
+}
+
+.testimonies-card .profile .rating {
+    margin-left: 90px;
+    margin-top: -10px;
+}
+
 .next-previous a:hover {
+    cursor: pointer;
     background-color: #ddd;
     color: #000;
 }
 
-.previous {
-    background-color: #dadada;
-    color: #000;
+.prv-nxt {
+    margin: auto 100px;
 }
 
-.next {
-    background-color: #04AA6D;
-    color: #f1f1f1;
-}
-
-.round {
+.prv-nxt svg {
+    background-color: #fff;
     border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 128px 11px rgba(199, 195, 195, 0.64);
+    -webkit-box-shadow: 0px 0px 128px 11px rgba(199, 195, 195, 0.64);
+    -moz-box-shadow: 0px 0px 128px 11px rgba(199, 195, 195, 0.64);
 }
+
+.prv-nxt svg:hover {
+    cursor: pointer;
+    background-color: #fef9f9;
+    transition: 0.2s;
+}
+
+/* Pricing */
+
+#Pricing {}
+
+.pricing-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.pricing-text p {
+    font-size: 16px;
+    font-weight: 200;
+    color: #1d1c1c;
+}
+
+.custom-card {
+    height: 400px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    border-radius: 15px;
+    border: none;
+}
+
+.custom-card:hover {
+    background-image: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
+    box-shadow: -7px 10px 48px -5px rgba(105, 97, 97, 0.75);
+    -webkit-box-shadow: -7px 10px 48px -5px rgba(105, 97, 97, 0.75);
+    -moz-box-shadow: -7px 10px 48px -5px rgba(105, 97, 97, 0.75);
+    transition: 0.8s ease-in-out;
+}
+
+.custom-card .card-heading h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1d1c1c;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1d1c1c;
+    padding-left: 30px;
+}
+
+.custom-card .card-ul ul li {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1d1c1c;
+}
+
+.price-btn-c {
+    margin: 0 auto !important;
+    margin-left: 300px;
+}
+
+.price-btn-c button {
+    background-color: #f9f1f4;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1d1c1c;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.price-btn-c button:hover {
+    background-color: #0FC66E;
+    transition: 1.2s ease-in-out;
+}
+
 
 /* Footer  */
 .footer-top {
