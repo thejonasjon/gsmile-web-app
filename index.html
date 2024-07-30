@@ -11,6 +11,10 @@
       href="resources/images/logo/favicon_gsmile.png"
     />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resources/css/style.css" />
+
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +38,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="resources/css/style.css" />
+
+  <!-- Swipper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
   </head>
   <body>
     <header>
@@ -84,60 +93,30 @@
             </ul>
           </div>
         </nav>
+
         <section id="intro">
           <div class="container-fluid custom-container-1">
-            <div class="row">
-              <div class="col-lg-6 header-content">
+            <div class="intro-container">
+              <div class="header-content">
                 <h1>
-                  Master Forex Trading with Expert Guidance and Proven
+                  Master Forex Trading with Expert<br> Guidance and Proven
                   Strategies.
                 </h1>
                 <p>
                   Whether you're taking your first steps into the world of forex
-                  or looking to refine your trading skills, our comprehensive
-                  courses and personalized mentorship programs are designed to
+                  or looking to refine your<br> trading skills, our comprehensive
+                  courses and personalized mentorship programs <br>are designed to
                   elevate your trading game.
                 </p>
                 <div class="header-cta">
                   <a
                     href="#"
-                    class="btn btn-primary btn-lg mr-2 get-started-btn"
+                    class=""
                     >Get Started</a
                   >
-                  <a href="#" class="btn btn-outline-danger btn-lg contact-btn"
+                  <a href="#" class=""
                     >Scheldue a Call</a
                   >
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="image-section-1">
-                  <!-- <img src="resources/images/image.jpg" alt="Side Image 1" class="img-fluid rounded" width="400px"> -->
-                  <video
-                    class="img-fluid rounded"
-                    width="400px"
-                    width="400px"
-                    autoplay
-                    loop
-                    muted
-                    poster="https://assets.codepen.io/6093409/river.jpg"
-                  >
-                    <source src="./resources/images/vbg.mp4" type="video/mp4" />
-                  </video>
-                </div>
-
-                <div class="image-section-2">
-                  <!-- <img src="resources/images/image.jpg" alt="Side Image 2" class="img-fluid rounded mt-3" width="400px"> -->
-                  <video
-                    class="img-fluid rounded mt-3"
-                    width="400px"
-                    autoplay
-                    loop
-                    muted
-                    poster="https://assets.codepen.io/6093409/river.jpg"
-                  >
-                    <source src="./resources/images/vbg.mp4" type="video/mp4" />
-                  </video>
                 </div>
               </div>
             </div>
@@ -148,7 +127,8 @@
 
     <!-- Training Section -->
     <section id="training">
-      <div class="container-fluid py-5">
+      <div class="training-cont">
+        <!-- row justify-content-center align-items-center mb-3 -->
         <div class="row justify-content-center align-items-center mb-3">
           <div class="text-center col-6 my-5 training-heading">
             <h2>Training</h2>
@@ -159,18 +139,12 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="training-container">
-            <div class="col-4">
-              <div class="training-image">
-                <img
-                  src="resources/images/training/m-ZzOa5G8hSPI-unsplash.jpg"
-                  alt="Training Image"
-                  width="400px"
-                />
-              </div>
-              <div class="training-card">
-                <h5>Basic: Begin your trading career</h5>
+
+        <div class="training-level">
+          <div class="training-card">
+              <img src="/resources/images/training/austin-distel-EMPZ7yRZoGw-unsplash.jpg" alt="Basic Trading Career">
+              <div class="content">
+                <h2>Basic: Begin your trading career</h2>
                 <ul>
                   <li>Learning the basics of Forex trading</li>
                   <li>Understand market analysis and trading strategies</li>
@@ -178,6 +152,127 @@
                   <li>Starting with small trades and low risk</li>
                   <li><b>Goal:</b> Break-even trading</li>
                 </ul>
+                <div class="learn-more-c">
+                  <a
+                    href="#Beginners-outline"
+                    class="outline-link learn-more"
+                    role="button"
+                    data-bs-toggle="offcanvas"
+                    aria-expanded="Beginners-outline"
+                    >Learn More</a
+                  >
+                </div>
+
+                <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="Beginners-outline"
+                aria-labelledby="outlineLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="outlineLabel">
+                    Course Outline
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close bg-secondary"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ol>
+                    <li>
+                      Definition and Overview
+                      <ul>
+                        <li>Foreign Exchange Market (Forex)</li>
+                        <li>
+                          Global decentralized market for trading currencies
+                        </li>
+                        <li>Largest financial market in the world</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Key Concept
+                      <ul>
+                        <li>Currency pair (majors, minors, exotics)</li>
+                        <li>Exchange rates (fixed, floating)</li>
+                        <li>Leverage and margin</li>
+                        <li>Lot size and pip values</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Market Participants
+                      <ul>
+                        <li>Banks and financial institutions</li>
+                        <li>Individual traders (retail and institutional)</li>
+                        <li>Hedge funds and investment firms</li>
+                        <li>Brokers and dealers</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Market Analysis
+                      <ul>
+                        <li>
+                          Fundamental analysis (economic indicators, news)
+                        </li>
+                        <li>Technical analysis (charts, patterns)</li>
+                        <li>Sentimental analysis (market sentiment)</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Trading Strategies
+                      <ul>
+                        <li>Day trading</li>
+                        <li>Swing trading</li>
+                        <li>Position trading</li>
+                        <li>Scalping</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Risk Management
+                      <ul>
+                        <li>Stop-loss orders</li>
+                        <li>Take-profit orders</li>
+                        <li>Position sizing</li>
+                        <li>Risk-reward ratio</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Conclusion
+                      <ul>
+                        <li>Forex market overview</li>
+                        <li>Importance of education and practice</li>
+                        <li>Start trading with a demo account</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+                <div class="offcancas-footer">
+                  <h6 class="px-4 pt-4">
+                    This outline provides a comprehensive introduction to the
+                    Forex market, covering key concepts, market participants,
+                    analysis, trading strategies, and risk management.
+                  </h6>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="training-card">
+            <img src="/resources/images/training/m-ZzOa5G8hSPI-unsplash.jpg" alt="Supply and Demand">
+            <div class="content">
+              <h2>Intermediate: Supply and Demand</h2>
+              <ul>
+                <li>Refining trading skills and Knowledge</li>
+                <li>Mastering multiple trading strategies</li>
+                <li>Managing risk and emotions</li>
+                <li>Increasing trade size and risk</li>
+                <li>
+                  <b>Goal:</b> Consistent profitability (20-50% per month)
+                </li>
+              </ul>
+              <div class="learn-more-c">
                 <a
                   href="#Beginners-outline"
                   class="outline-link learn-more"
@@ -186,398 +281,271 @@
                   aria-expanded="Beginners-outline"
                   >Learn More</a
                 >
+              </div>
 
-                <div
-                  class="offcanvas offcanvas-start"
-                  tabindex="-1"
-                  id="Beginners-outline"
-                  aria-labelledby="outlineLabel"
-                >
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="outlineLabel">
-                      Course Outline
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close bg-secondary"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <ol>
-                      <li>
-                        Definition and Overview
-                        <ul>
-                          <li>Foreign Exchange Market (Forex)</li>
-                          <li>
-                            Global decentralized market for trading currencies
-                          </li>
-                          <li>Largest financial market in the world</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Key Concept
-                        <ul>
-                          <li>Currency pair (majors, minors, exotics)</li>
-                          <li>Exchange rates (fixed, floating)</li>
-                          <li>Leverage and margin</li>
-                          <li>Lot size and pip values</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Market Participants
-                        <ul>
-                          <li>Banks and financial institutions</li>
-                          <li>Individual traders (retail and institutional)</li>
-                          <li>Hedge funds and investment firms</li>
-                          <li>Brokers and dealers</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Market Analysis
-                        <ul>
-                          <li>
-                            Fundamental analysis (economic indicators, news)
-                          </li>
-                          <li>Technical analysis (charts, patterns)</li>
-                          <li>Sentimental analysis (market sentiment)</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Trading Strategies
-                        <ul>
-                          <li>Day trading</li>
-                          <li>Swing trading</li>
-                          <li>Position trading</li>
-                          <li>Scalping</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Risk Management
-                        <ul>
-                          <li>Stop-loss orders</li>
-                          <li>Take-profit orders</li>
-                          <li>Position sizing</li>
-                          <li>Risk-reward ratio</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Conclusion
-                        <ul>
-                          <li>Forex market overview</li>
-                          <li>Importance of education and practice</li>
-                          <li>Start trading with a demo account</li>
-                        </ul>
-                      </li>
-                    </ol>
-                  </div>
-                  <div class="offcancas-footer">
-                    <h6 class="px-4 pt-4">
-                      This outline provides a comprehensive introduction to the
-                      Forex market, covering key concepts, market participants,
-                      analysis, trading strategies, and risk management.
-                    </h6>
-                  </div>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="Intermediate-outline"
+                aria-labelledby="outlineLabel2"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="outlineLabel2">
+                    Course Outline
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close bg-secondary"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ol>
+                    <li>
+                      Market Analysis
+                      <ul>
+                        <li>
+                          Understand market structures (trends, ranges,
+                          breakouts)
+                        </li>
+                        <li>
+                          Identify key levels (support, resistance, fibonacci)
+                        </li>
+                        <li>
+                          Analyse candlestick patterns and chart formations
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Trading Strategies
+                      <ul>
+                        <li>
+                          Master multiple strategies (trend following, mean
+                          reversion, scalping)
+                        </li>
+                        <li>
+                          Understand how to adapt strategies to market
+                          conditions
+                        </li>
+                        <li>
+                          Develop a trading plan with clear entry/exit points
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Risk Management
+                      <ul>
+                        <li>Understand position sizing and lot management</li>
+                        <li>Set stop-losses and take-profits effectively</li>
+                        <li>Manage emotions and psychology during trading</li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Advanced Techniques
+                      <ul>
+                        <li>
+                          Learn advanced chart patterns (elliott wave,
+                          harmonic patterns)
+                        </li>
+                        <li>Understand market sentiment and positioning</li>
+                        <li>
+                          Use indicators and tools effectively (Bollinger
+                          Bands, RSI, etc.)
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Trade Management
+                      <ul>
+                        <li>Learn how to scale in and out of trades</li>
+                        <li>
+                          Understand how to trail stops and manage profits
+                        </li>
+                        <li>Develop a trade journal to track performance</li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Market Dynamics
+                      <ul>
+                        <li>
+                          Understand market correlations and relationships
+                        </li>
+                        <li>Analyse news and events impact on markets</li>
+                        <li>
+                          Stay up-to-date with market trends and sentiment
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Psychology and Discipline
+                      <ul>
+                        <li>
+                          Develop a growth mindset and learn from mistakes
+                        </li>
+                        <li>
+                          Stay disciplined and patient in your trading
+                          approach
+                        </li>
+                        <li>Manage stress and emotions during trading</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+                <div class="offcancas-footer">
+                  <h6 class="px-4 pt-4">
+                    By mastering these intermediate concepts, you'll enhance
+                    your trading skills and improve your chances of success in
+                    the Forex market.
+                  </h6>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-4">
-              <div class="training-image">
-                <img
-                  src="resources/images/training/pexels-alphatradezone-5831251.jpg"
-                  alt="Training Image"
-                  width="400px"
-                />
-              </div>
-              <div class="training-card">
-                <h5>Intermediate: Supply and Demand</h5>
-                <ul>
-                  <li>Refining trading skills and Knowledge</li>
-                  <li>Mastering multiple trading strategies</li>
-                  <li>Managing risk and emotions</li>
-                  <li>Increasing trade size and risk</li>
-                  <li>
-                    <b>Goal:</b> Consistent profitability (20-50% per month)
-                  </li>
-                </ul>
+          <div class="training-card">
+            <img src="/resources/images/training/pexels-weekendplayer-186464.jpg" alt="Confluence and Strategy">
+            <div class="content">
+              <h2>Advanced: Trade with Confluence strategy</h2>
+              <ul>
+                <li>Developing advanced trading techniques</li>
+                <li>Using quantitative analysis and programming</li>
+                <li>Refining market analysis and prediction skills</li>
+                <li>Maximizing profits and minimizing losses</li>
+                <li><b>Goal:</b> High profitability (50-100% per month)</li>
+              </ul>
+              <div class="learn-more-c">
                 <a
-                  href="#Intermediate-outline"
+                  href="#Beginners-outline"
                   class="outline-link learn-more"
                   role="button"
                   data-bs-toggle="offcanvas"
-                  aria-expanded="Intermediate-outline"
+                  aria-expanded="Beginners-outline"
                   >Learn More</a
                 >
-                <div
-                  class="offcanvas offcanvas-start"
-                  tabindex="-1"
-                  id="Intermediate-outline"
-                  aria-labelledby="outlineLabel2"
-                >
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="outlineLabel2">
-                      Course Outline
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close bg-secondary"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <ol>
-                      <li>
-                        Market Analysis
-                        <ul>
-                          <li>
-                            Understand market structures (trends, ranges,
-                            breakouts)
-                          </li>
-                          <li>
-                            Identify key levels (support, resistance, fibonacci)
-                          </li>
-                          <li>
-                            Analyse candlestick patterns and chart formations
-                          </li>
-                        </ul>
-                      </li>
+              </div>
 
-                      <li>
-                        Trading Strategies
-                        <ul>
-                          <li>
-                            Master multiple strategies (trend following, mean
-                            reversion, scalping)
-                          </li>
-                          <li>
-                            Understand how to adapt strategies to market
-                            conditions
-                          </li>
-                          <li>
-                            Develop a trading plan with clear entry/exit points
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        Risk Management
-                        <ul>
-                          <li>Understand position sizing and lot management</li>
-                          <li>Set stop-losses and take-profits effectively</li>
-                          <li>Manage emotions and psychology during trading</li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        Advanced Techniques
-                        <ul>
-                          <li>
-                            Learn advanced chart patterns (elliott wave,
-                            harmonic patterns)
-                          </li>
-                          <li>Understand market sentiment and positioning</li>
-                          <li>
-                            Use indicators and tools effectively (Bollinger
-                            Bands, RSI, etc.)
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        Trade Management
-                        <ul>
-                          <li>Learn how to scale in and out of trades</li>
-                          <li>
-                            Understand how to trail stops and manage profits
-                          </li>
-                          <li>Develop a trade journal to track performance</li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        Market Dynamics
-                        <ul>
-                          <li>
-                            Understand market correlations and relationships
-                          </li>
-                          <li>Analyse news and events impact on markets</li>
-                          <li>
-                            Stay up-to-date with market trends and sentiment
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        Psychology and Discipline
-                        <ul>
-                          <li>
-                            Develop a growth mindset and learn from mistakes
-                          </li>
-                          <li>
-                            Stay disciplined and patient in your trading
-                            approach
-                          </li>
-                          <li>Manage stress and emotions during trading</li>
-                        </ul>
-                      </li>
-                    </ol>
-                  </div>
-                  <div class="offcancas-footer">
-                    <h6 class="px-4 pt-4">
-                      By mastering these intermediate concepts, you'll enhance
-                      your trading skills and improve your chances of success in
-                      the Forex market.
-                    </h6>
-                  </div>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="Advanced-outline"
+                aria-labelledby="outlineLabel3"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="outlineLabel3">
+                    Course Outline
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close bg-secondary"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="training-image">
-                <img
-                  src="resources/images/training/pexels-weekendplayer-186464.jpg"
-                  alt="Training Image"
-                  width="400px"
-                />
-              </div>
-              <div class="training-card">
-                <h6>Advanced: Trade with Confluence strategy</h6>
-                <ul>
-                  <li>Developing advanced trading techniques</li>
-                  <li>Using quantitative analysis and programming</li>
-                  <li>Refining market analysis and prediction skills</li>
-                  <li>Maximizing profits and minimizing losses</li>
-                  <li><b>Goal:</b> High profitability (50-100% per month)</li>
-                </ul>
-                <a
-                  href="#Advanced-outline"
-                  class="outline-link learn-more"
-                  role="button"
-                  data-bs-toggle="offcanvas"
-                  aria-expanded="Advanced-outline"
-                  >Learn More</a
-                >
-
-                <div
-                  class="offcanvas offcanvas-end"
-                  tabindex="-1"
-                  id="Advanced-outline"
-                  aria-labelledby="outlineLabel3"
-                >
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="outlineLabel3">
-                      Course Outline
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close bg-secondary"
-                      data-bs-dismiss="offcanvas"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <ol>
-                      <li>
-                        Market Analysis
-                        <ul>
-                          <li>
-                            Understand market structures (trends, ranges,
-                            breakouts)
-                          </li>
-                          <li>
-                            Identify key levels (support, resistance, fibonacci)
-                          </li>
-                          <li>
-                            Analyse candlestick patterns and chart formations
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        Trading Strategies
-                        <ul>
-                          <li>
-                            Master multiple strategies (trend following, mean
-                            reversion, scalping)
-                          </li>
-                          <li>
-                            Understand how to adapt strategies to market
-                            conditions
-                          </li>
-                          <li>
-                            Develop a trading plan with clear entry/exit points
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        Risk Management
-                        <ul>
-                          <li>Understand position sizing and lot management</li>
-                          <li>Set stop-losses and take-profits effectively</li>
-                          <li>Manage emotions and psychology during trading</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Advanced Techniques
-                        <ul>
-                          <li>
-                            Learn advanced chart patterns (elliott wave,
-                            harmonic patterns)
-                          </li>
-                          <li>Understand market sentiment and positioning</li>
-                          <li>
-                            Use indicators and tools effectively (Bollinger
-                            Bands, RSI, etc.)
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        Trade Management
-                        <ul>
-                          <li>Learn how to scale in and out of trades</li>
-                          <li>
-                            Understand how to trail stops and manage profits
-                          </li>
-                          <li>Develop a trade journal to track performance</li>
-                        </ul>
-                      </li>
-                      <li>
-                        Market Dynamics
-                        <ul>
-                          <li>
-                            Understand market correlations and relationships
-                          </li>
-                          <li>Analyse news and events impact on markets</li>
-                          <li>
-                            Stay up-to-date with market trends and sentiment
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        Psychology and Discipline
-                        <ul>
-                          <li>
-                            Develop a growth mindset and learn from mistakes
-                          </li>
-                          <li>
-                            Stay disciplined and patient in your trading
-                            approach
-                          </li>
-                          <li>Manage stress and emotions during trading</li>
-                        </ul>
-                      </li>
-                    </ol>
-                  </div>
-                  <div class="offcancas-footer">
-                    <h6 class="px-4 pt-4">
-                      By mastering these intermediate concepts, you'll enhance
-                      your trading skills and improve your chances of success in
-                      the Forex market.
-                    </h6>
-                  </div>
+                <div class="offcanvas-body">
+                  <ol>
+                    <li>
+                      Market Analysis
+                      <ul>
+                        <li>
+                          Understand market structures (trends, ranges,
+                          breakouts)
+                        </li>
+                        <li>
+                          Identify key levels (support, resistance, fibonacci)
+                        </li>
+                        <li>
+                          Analyse candlestick patterns and chart formations
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Trading Strategies
+                      <ul>
+                        <li>
+                          Master multiple strategies (trend following, mean
+                          reversion, scalping)
+                        </li>
+                        <li>
+                          Understand how to adapt strategies to market
+                          conditions
+                        </li>
+                        <li>
+                          Develop a trading plan with clear entry/exit points
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Risk Management
+                      <ul>
+                        <li>Understand position sizing and lot management</li>
+                        <li>Set stop-losses and take-profits effectively</li>
+                        <li>Manage emotions and psychology during trading</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Advanced Techniques
+                      <ul>
+                        <li>
+                          Learn advanced chart patterns (elliott wave,
+                          harmonic patterns)
+                        </li>
+                        <li>Understand market sentiment and positioning</li>
+                        <li>
+                          Use indicators and tools effectively (Bollinger
+                          Bands, RSI, etc.)
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Trade Management
+                      <ul>
+                        <li>Learn how to scale in and out of trades</li>
+                        <li>
+                          Understand how to trail stops and manage profits
+                        </li>
+                        <li>Develop a trade journal to track performance</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Market Dynamics
+                      <ul>
+                        <li>
+                          Understand market correlations and relationships
+                        </li>
+                        <li>Analyse news and events impact on markets</li>
+                        <li>
+                          Stay up-to-date with market trends and sentiment
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Psychology and Discipline
+                      <ul>
+                        <li>
+                          Develop a growth mindset and learn from mistakes
+                        </li>
+                        <li>
+                          Stay disciplined and patient in your trading
+                          approach
+                        </li>
+                        <li>Manage stress and emotions during trading</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+                <div class="offcancas-footer">
+                  <h6 class="px-4 pt-4">
+                    By mastering these intermediate concepts, you'll enhance
+                    your trading skills and improve your chances of success in
+                    the Forex market.
+                  </h6>
                 </div>
               </div>
             </div>
@@ -595,13 +563,14 @@
             <p>
               Entrusting your funds with our Account Management service, means
               leveraging the expertise of seasoned traders who are dedicated to
-              maximizing your returns
+              maximizing your returns.
             </p>
           </div>
         </div>
+
         <div class="m-container">
-          <div class="mentorship-content">
-            <div class="mentorship-text mentorship-left">
+          <div class="mentorship-content m-my">
+            <div class="mentorship-text">
               <h2>Foundation and Needs Assessment</h2>
               <p>
                 During this initial stage, the focus is on understanding the
@@ -628,18 +597,19 @@
               </ul>
             </div>
 
-            <div class="mentorship-image mentorship-right">
+            <div class="mentorship-image">
               <img
-                width="600px"
-                height="550px"
-                src="https://images.unsplash.com/photo-1649274496773-c40eacd66e2d?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Assessment"
-              />
+               src="/resources/images/kkk2.webp">
             </div>
           </div>
 
-          <div class="mentorship-content">
-            <div class="mentorship-text mentorship-right-02">
+          <div class="mentorship-content m-my">
+            <div class="mentorship-image">
+              <img
+              src="/resources/images/mentorship/strategy-development.jpg">
+            </div>
+
+            <div class="mentorship-text">
               <h2>Strategy Development and Customization</h2>
               <p>
                 Building on the foundational knowlede, this stae emphasizes the
@@ -650,15 +620,15 @@
               <ul>
                 <li>
                   Daily mentorship sessions focusing on advanced trade
-                  strategies and techniques
+                  strategies and techniques.
                 </li>
                 <li>
                   Personalized coaching to address specific challenges and
-                  refine trading skills
+                  refine trading skills.
                 </li>
                 <li>
                   Detailed feedback on trading performance and decision-making
-                  process
+                  process.
                 </li>
                 <li>
                   Dive deeper into market psychology and risk management
@@ -666,23 +636,14 @@
                 </li>
                 <li>
                   Continued refinement and customization of the trading plan to
-                  optimize perfomance and adapt to changing market conditions
+                  optimize perfomance and adapt to changing market conditions.
                 </li>
               </ul>
-            </div>
-
-            <div class="mentorship-image mentorship-left-02">
-              <img
-                width="600px"
-                height="550px"
-                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Strategy"
-              />
             </div>
           </div>
 
           <div class="mentorship-content">
-            <div class="mentorship-text mentorship-left">
+            <div class="mentorship-text">
               <h2>Monitoring and Continuous Improvement</h2>
               <p>
                 In the final stage, the focus shifts to monitoring progress and
@@ -692,19 +653,19 @@
               <ul>
                 <li>
                   Access to private trading room for outgoing support and
-                  collaboration
+                  collaboration.
                 </li>
                 <li>
                   Mastery of high-performance trading strategies with real time
-                  market applications
+                  market applications.
                 </li>
                 <li>
                   Optional quarterly in-person meetings for deeper engagement
-                  and personalized guidance
+                  and personalized guidance.
                 </li>
                 <li>
                   Regular session to review and reinforce learning outcomes,
-                  assessing the mentee's development
+                  assessing the mentee's development.
                 </li>
                 <li>
                   Priority access to new trading opportunities and exclusive
@@ -713,22 +674,18 @@
                 <li>
                   Discount for commitment periods (10% off for 3 months, 20% off
                   for 6 months, 30% off for 12 months) incentivizing long-term
-                  growth
+                  growth.
                 </li>
                 <li>
                   Assurance with a 30-day money-back guarantee, reflecting our
-                  commitment to mentorship satisfaction
+                  commitment to mentorship satisfaction.
                 </li>
               </ul>
             </div>
 
-            <div class="mentorship-image mentorship-right">
+            <div class="mentorship-image">
               <img
-                width="600px"
-                height="550px"
-                src="https://images.unsplash.com/photo-1579226905180-636b76d96082?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Monitoring"
-              />
+              src="/resources/images/mentorship/monitor-improvement.jpg">
             </div>
           </div>
         </div>
@@ -744,7 +701,7 @@
             <p>
               Entrusting your funds with our Account Management service, means
               leveraging the expertise of seasoned traders who are dedicated to
-              maximizing your returns
+              maximizing your returns.
             </p>
           </div>
         </div>
@@ -752,8 +709,8 @@
         <div class="a-m-container">
           <div class="management-content">
             <div
-              class="account-management-card account-management-card-left first-card-m"
-            >
+              class="account-management-card first-card-m"
+              >
               <div class="account-management-card-c">
                 <div class="container-icon">
                   <svg
@@ -797,14 +754,14 @@
                     Before proceeding, we ensure a comprehensive understanding
                     of your risk appetite, investment amount and specific goals.
                     This ensures allignment with your investment objectives and
-                    preferences
+                    preferences.
                   </p>
                 </div>
               </div>
             </div>
 
             <div
-              class="account-management-card account-management-card-right second-card-m"
+              class="account-management-card second-card-m"
             >
               <div class="account-management-card-c">
                 <div class="container-icon">
@@ -982,132 +939,109 @@
             <p>
               Don't just take our word for it- here from our satisfied clients
               who have transformed their trading careers with our courses and
-              mentorship
+              mentorship.
             </p>
           </div>
         </div>
 
         <div class="testimonies-c">
-          <div class="testimonies-content">
-            <div class="testimonies-card-c">
-              <div class="prv-nxt">
-                <svg
-                  fill="#000000"
-                  width="40px"
-                  version="1.1"
-                  id="XMLID_287_"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  transform="rotate(180)"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <g id="next">
-                      <g>
-                        <polygon
-                          points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 "
-                        ></polygon>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </div>
+          <div class="swiper">
+            <div class="testimonies-content customSwiper">
+              <div class="testimonies-card-c swiper-wrapper" slides-per-view="3" speed="500" loop="true" css-mode="true">
 
-              <div class="testimonies-card">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime aut excepturi facere, dolore eveniet nisi recusandae
-                  labore laudantium optio molestiae assumenda dolorum!
-                  Reiciendis tempora dolorem distinctio quis neque dolore
-                  dolores.
-                </p>
+                <div class="testimonies-card swiper-slide">
+                  <p>
+                    "I was new to Forex trading and felt overwhelmed, but GsmileFx's mentorship program changed everything!
+                    With their expert guidance, I gained the skills and confidence to trade like a pro. GsmileFx is patient,
+                    knowledgeable, and supportive - they truly care about their students' success. Thanks to their mentorship,
+                    I've achieved consistent profits and a newfound passion for trading. I highly recommend GsmileFx's
+                    Forex mentorship to any woman looking to succeed in the markets!"
+                  </p>
 
-                <div class="profile">
-                  <span>
-                    <img
-                      width="60px"
-                      height="60px"
-                      src="/resources/images/testimonies/jonas.png"
-                      alt="Profile"
-                    />
-                    Jonas Jon. / Forex Trader
-                    <div class="pb-2 rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </span>
+                  <div class="profile">
+                    <span>
+                      <img
+                        width="60px"
+                        height="60px"
+                        src="/resources/images/testimonies/jonas.png"
+                        alt="Profile"
+                      />
+                      Jennifer Okorafor. / Forex Trader
+                      <div class="pb-2 rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="testimonies-card card-ml">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime aut excepturi facere, dolore eveniet nisi recusandae
-                  labore laudantium optio molestiae assumenda dolorum!
-                  Reiciendis tempora dolorem distinctio quis neque dolore
-                  dolores.
-                </p>
+                <div class="testimonies-card swiper-slide">
+                  <p>
+                    "I was struggling to make sense of the Forex market, but GsmileFx's mentorship program was a game-changer!
+                    Their clear explanations, personalized feedback, and encouragement helped me master the strategies and
+                    techniques needed to succeed. With GsmileFx's guidance, I've increased my profits and reduced my losses.
+                    Their mentorship has been invaluable, and I'm grateful for the opportunity to learn from a true expert.
+                    If you're serious about improving your Forex trading skills, look no further than GsmileFx's mentorship program!"
+                  </p>
 
-                <div class="profile">
-                  <span>
-                    <img
-                      width="60px"
-                      height="60px"
-                      src="/resources/images/testimonies/jonas.png"
-                      alt="Profile"
-                    />
-                    Jonas Jon. / Forex Trader
-                    <div class="pb-2 rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </span>
+                  <div class="profile">
+                    <span>
+                      <img
+                        width="60px"
+                        height="60px"
+                        src="/resources/images/testimonies/jonas.png"
+                        alt="Profile"
+                      />
+                      Titilope Adepoju Mary / Forex Trader
+                      <div class="pb-2 rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="prv-nxt">
-                <svg
-                  fill="#000000"
-                  width="40px"
-                  version="1.1"
-                  id="XMLID_287_"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 24 24"
-                  xml:space="preserve"
-                  transform="rotate(0)"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <g id="next">
-                      <g>
-                        <polygon
-                          points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 "
-                        ></polygon>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <div class="testimonies-card swiper-slide">
+                  <p>
+                    "GsmileFx is more than a mentor, they are a trading coach, a guide, and a friend!
+                    Their passion for teaching and desire to see their students succeed is unparalleled.
+                    With their guidance, I've transformed from a struggling trader to a confident market navigator.
+                    Their mentorship program is comprehensive, structured, and tailored to individual needs.
+                    I've achieved consistent profits and a deeper understanding of the markets thanks to GsmileFx's
+                    expertise and support. They are the best in the business, and I feel fortunate to have had the
+                    opportunity to learn from them. If you want to take your trading to the next level, look no further!"
+                  </p>
+
+                  <div class="profile">
+                    <span>
+                      <img
+                        width="60px"
+                        height="60px"
+                        src="/resources/images/testimonies/jonas.png"
+                        alt="Profile"
+                      />
+                      Damilola .O. / Forex Trader
+                      <div class="pb-2 rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+
               </div>
             </div>
+            <div class="swiper-button-prev s-btn-prv"></div>
+            <div class="swiper-button-next s-btn-nxt"></div>
           </div>
         </div>
       </div>
@@ -1115,35 +1049,30 @@
 
     <!-- Pricing -->
     <section id="Pricing">
-      <div class="container-xl py-5">
+      <div class="container-xl pricing-container">
         <div class="row justify-content-center mb-3">
           <div class="col-8 my-5 text-center pricing-text">
-            <h3>Pricing</h3>
+            <h2>Pricing</h2>
             <p>
               Invest in your trading future with our flexible and transparent
               trading plans. Our programmed training, 1-1 Mentorship, Account
               Management are each designed to provide you with the essential
-              knowledge and advance skills needed to excel in the forex market
+              knowledge and advance skills needed to excel in the forex market.
             </p>
           </div>
         </div>
 
-        <div class="pricing-container">
-          <div class="pricing-content"></div>
-        </div>
-
-        <div class="row justify-content-center mb-5">
-          <div class="col-sm-8 col-lg-3 mt-2">
-            <div class="card px-2 custom-card">
-              <div class="mt-4 px-5 card-heading">
-                <h5>Basic Mentorship (Beginners)</h5>
+        <div class="price-list">
+          <div class="custom-card">
+              <div class="card-heading">
+                <h4>Basic Mentorship (Beginners)</h4>
               </div>
 
               <div class="card-body">
                 <h1 class="card-title">
                   $149<span style="font-size: x-small">/ Total package</span>
                 </h1>
-                <div class="my-4 card-ul">
+                <div class="card-ul">
                   <ul>
                     <li class="list-items">
                       1-on-1 mentorship sessions (bi-weekly)
@@ -1158,25 +1087,21 @@
                   </ul>
                 </div>
                 <div class="price-btn-c">
-                  <button class="btn btn-small btn-primary rounded px-5">
-                    Let's Started
-                  </button>
+                  <button class="price-btn">Get Started</button>
                 </div>
               </div>
-            </div>
           </div>
 
-          <div class="col-sm-8 col-lg-3 mt-2">
-            <div class="card px-2 custom-card">
-              <div class="mt-4 px-5 card-heading">
-                <h5>Premium Mentorship Package</h5>
+          <div class="custom-card">
+              <div class="card-heading">
+                <h4>Premium Mentorship Package</h4>
               </div>
 
               <div class="card-body">
                 <h1 class="card-title">
                   $250<span style="font-size: x-small">/ Total package</span>
                 </h1>
-                <div class="my-4 card-ul" style="margin: auto">
+                <div class="card-ul">
                   <ul>
                     <li class="list-items">All Basic Package features</li>
                     <li class="list-items">Daily mentorship sessions</li>
@@ -1189,23 +1114,21 @@
                   </ul>
                 </div>
                 <div class="price-btn-c">
-                  <button class="price-btn px-5">Let's Started</button>
+                  <button class="price-btn">Get Started</button>
                 </div>
               </div>
-            </div>
           </div>
 
-          <div class="col-sm-8 col-lg-3 mt-2">
-            <div class="card px-2 custom-card">
-              <div class="mt-4 px-5 card-heading">
-                <h5>Elite Mentorship Package</h5>
+            <div class="custom-card">
+              <div class="card-heading">
+                <h4>Elite Mentorship Package</h4>
               </div>
 
               <div class="card-body">
                 <h1 class="card-title">
                   $500<span style="font-size: x-small">/ Total package</span>
                 </h1>
-                <div class="my-4 card-ul" style="margin: auto">
+                <div class="card-ul" style="margin: auto">
                   <ul>
                     <li class="list-items">All Premium Package features</li>
                     <li class="list-items">Private trading room access</li>
@@ -1218,23 +1141,21 @@
                   </ul>
                 </div>
                 <div class="price-btn-c">
-                  <button class="price-btn px-5">Let's Started</button>
+                  <button class="price-btn">Get Started</button>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-8 col-lg-3 mt-2">
-            <div class="card px-2 custom-card">
-              <div class="mt-4 px-5 card-heading">
-                <h5>VIP Mentorship Package</h5>
+            <div class="custom-card">
+              <div class="card-heading">
+                <h4>VIP Mentorship Package</h4>
               </div>
 
               <div class="card-body">
                 <h1 class="card-title">
                   $1,250<span style="font-size: x-small">/ Total package</span>
                 </h1>
-                <div class="my-4 card-ul" style="margin: auto">
+                <div class="card-ul">
                   <ul>
                     <li class="list-items">All Elite Package features</li>
                     <li class="list-items">Dedicated account management</li>
@@ -1247,11 +1168,10 @@
                   </ul>
                 </div>
                 <div class="price-btn-c">
-                  <button class="price-btn px-5">Let's Started</button>
+                  <button class="price-btn">Get Started</button>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1259,16 +1179,14 @@
     <!-- Footer section -->
     <footer>
       <div class="container-fluid footer-top">
-        <div class="row">
-          <div class="col-4">
+        <div class="footer-top-content">
+          <div class="f-t-content-block">
             <h4>Get the latest news and updates</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit Nunc
-              maximus.
+              Get latest content update and post directly deliver into your email. All you need to do is subscribe.
             </p>
           </div>
-          <div class="col-4"></div>
-          <div class="col-4" id="contact">
+          <div class="contact" id="contact">
             <form class="form-inline">
               <div class="input-group">
                 <input
@@ -1288,8 +1206,8 @@
       </div>
 
       <div class="footer-down">
-        <div class="row">
-          <div class="col-4">
+        <div class="f-d-content-container">
+          <div class="f-d-content-block">
             <div>
               <a href="#"
                 ><img
@@ -1298,7 +1216,7 @@
                   alt="GSMILE FX Logo"
                   width="100px"
               /></a>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <p>Master Forex Trading Expert.</p>
             </div>
             <div class="row">
               <div class="col-4">
@@ -1325,7 +1243,7 @@
                       /></a>
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="https://www.instagram.com/gsmilefx?igsh=MW01NnhlaDVheHBtNQ=="
                         ><img
                           src="./resources/images/socials/instagram.png"
                           alt="Instagram"
@@ -1333,7 +1251,7 @@
                       /></a>
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="https://m.youtube.com/@GsmileFx"
                         ><img
                           src="./resources/images/socials/youtube.png"
                           alt="YouTube"
@@ -1345,39 +1263,35 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-1">
 
-                </div> -->
-
-          <div class="col-2">
+          <div class="f-d-content-block">
             <div>
               <h5>Tips</h5>
               <ul>
-                <li><a href="#">Marketing</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Ecommerce</a></li>
-                <li><a href="#">Insights</a></li>
+                <li><a href="#">Market Analyse</a></li>
+                <li><a href="#">Supply & Demand</a></li>
+                <li><a href="#">Entry</a></li>
+                <li><a href="#">Strategy</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="f-d-content-block">
             <div>
               <h5>Services</h5>
               <ul>
                 <li><a href="#">1 on 1 Mentorship</a></li>
                 <li><a href="#">Training</a></li>
                 <li><a href="#">Account Management</a></li>
-                <li><a href="#">Testimonies</a></li>
+                <li><a href="#">Others</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="f-d-content-block">
             <div>
               <h5>Company</h5>
               <ul>
-                <li><a href="#">About</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Career </a></li>
                 <li><a href="#">About CEO</a></li>
@@ -1385,14 +1299,12 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="f-d-content-block">
             <div>
               <h5>Contact Us</h5>
               <ul>
-                <li><a href="#">+234 7038250033</a></li>
-                <li><a href="#">info@gsmile.com</a></li>
-                <li><a href="#">Career </a></li>
-                <li><a href="#">Lorum ipsum jdj</a></li>
+                <li><a href="tel:+2347038250033">+234 7038250033</a></li>
+                <li><a href="mailto: gsmilefx@gmail.com">gsmilefx@gmail.com</a></li>
               </ul>
             </div>
           </div>
@@ -1407,19 +1319,17 @@
         </div>
 
         <div class="footer-last">
-          <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-              <small
-                >Copyright &copy; 2024 <strong>Gsmile.</strong> All rights
-                reserved.</small
-              >
-            </div>
-            <div class="col-4"></div>
+          <div class="copyright">
+            <small
+              >Copyright &copy; 2024 <strong>Gsmile.</strong> All rights
+              reserved.</small
+            >
           </div>
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/resources/js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
